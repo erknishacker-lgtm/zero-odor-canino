@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Raio-X Zero Odor: descubra em 2 minutos por que o hálito do seu cão volta e o que ajustar na rotina."
+    />
+    <title>Raio-X Zero Odor · Selo Zero Odor Canino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/img/logo-web.png" type="image/png" />
+  </head>
+  <body class="quiz-body">
+    <div class="quiz-app">
+      <header class="quiz-top" id="topBar">
+        <a class="logo" href="index.html" aria-label="Selo Zero Odor Canino">
+          <img src="assets/img/logo-web.png" width="42" height="42" alt="" />
+          <span class="logo__text">Zero Odor<small>Raio-X</small></span>
+        </a>
+        <div class="progress-wrap">
+          <div class="progress-meta">
+            <span id="progressLabel">Início</span>
+            <span id="progressPct">0%</span>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="quiz-stage">
+        <!-- INTRO -->
+        <section class="screen screen--intro is-active" id="screen-intro" aria-labelledby="introTitle">
+          <div class="screen__body screen__body--intro">
+            <div class="intro-hero">
+              <img
+                class="intro-hero__img"
+                src="assets/img/hero-tutor.jpg"
+                alt="Tutora com cão pequeno no colo"
+                width="800"
+                height="500"
+                fetchpriority="high"
+              />
+              <div class="intro-hero__shade" aria-hidden="true"></div>
+              <div class="intro-hero__content">
+                <p class="intro-hero__tag">Raio-X gratuito · ~2 min</p>
+                <h1 id="introTitle" class="intro-title">
+                  O hálito do seu cão volta em poucas horas?
+                </h1>
+              </div>
+            </div>
+
+            <p class="intro-hook">
+              Você limpa, compra spray, testa petisco — e o cheiro reaparece.
+              <strong>Não é falta de carinho.</strong> É falta de triagem.
+            </p>
+
+            <ul class="intro-pain" aria-label="Sinais comuns">
+              <li>Escova e o cheiro volta no mesmo dia</li>
+              <li>Já gastou com produto e nada resolveu de verdade</li>
+              <li>Fica constrangido no colo, no sofá ou com visitas</li>
+            </ul>
+
+            <div class="intro-promise">
+              <p class="intro-promise__title">Em 7 respostas você descobre:</p>
+              <div class="intro-promise__grid">
+                <span>Seu score de urgência</span>
+                <span>O perfil da sua dor</span>
+                <span>O que ajustar primeiro</span>
+              </div>
+            </div>
+
+            <div class="intro-breeds" aria-label="Feito para cães pequenos">
+              <div class="intro-breeds__faces">
+                <img src="assets/img/raca-spitz.jpg" alt="" width="40" height="40" />
+                <img src="assets/img/cao-york.jpg" alt="" width="40" height="40" />
+                <img src="assets/img/cao-shih.jpg" alt="" width="40" height="40" />
+                <img src="assets/img/raca-poodle.jpg" alt="" width="40" height="40" />
+                <img src="assets/img/raca-maltese.jpg" alt="" width="40" height="40" />
+              </div>
+              <p class="intro-breeds__text">
+                Feito para <strong>spitz, yorkie, shih tzu, poodle toy</strong> e outros cães
+                pequenos
+              </p>
+            </div>
+          </div>
+          <div class="screen__footer screen__footer--pinned">
+            <button type="button" class="btn btn--primary btn--cta-pulse" id="btnStart">
+              Sim, quero meu raio-X agora
+            </button>
+            <p class="form-note">Grátis · sem cartão · resultado na hora</p>
+          </div>
+        </section>
+
+        <!-- QUESTION -->
+        <section class="screen" id="screen-question" aria-labelledby="questionTitle">
+          <div class="screen__body">
+            <h2 class="question-title" id="questionTitle">Pergunta</h2>
+            <ul class="option-list" id="optionList"></ul>
+          </div>
+          <div class="screen__footer">
+            <button type="button" class="btn btn--ghost" id="btnBack">Pergunta anterior</button>
+          </div>
+        </section>
+
+        <!-- LEAD -->
+        <section class="screen" id="screen-lead" aria-labelledby="leadTitle">
+          <div class="screen__body">
+            <div class="center">
+              <img
+                class="logo--lg"
+                src="assets/img/logo-web.png"
+                width="88"
+                height="88"
+                alt="Selo Zero Odor Canino"
+                style="margin: 0 auto 0.75rem; border-radius: 50%"
+              />
+            </div>
+            <p class="eyebrow">Seu raio-X está pronto</p>
+            <h2 class="question-title" id="leadTitle">
+              Onde você quer receber o resumo do diagnóstico?
+            </h2>
+            <p class="lede">
+              Liberamos score e perfil em seguida. Usamos seus dados para este material e contato
+              sobre o plano — sem spam de produtos aleatórios.
+            </p>
+
+            <form class="form-stack" id="leadForm" novalidate>
+              <div class="field">
+                <label for="leadName">Seu nome</label>
+                <input
+                  id="leadName"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Como prefere ser chamado(a)"
+                  required
+                />
+                <p class="field-error" id="leadNameError" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="leadEmail">E-mail</label>
+                <input
+                  id="leadEmail"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  inputmode="email"
+                  placeholder="seu@email.com"
+                  required
+                />
+                <p class="field-error" id="leadEmailError" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="leadWhatsapp">WhatsApp</label>
+                <input
+                  id="leadWhatsapp"
+                  name="whatsapp"
+                  type="tel"
+                  autocomplete="tel"
+                  inputmode="numeric"
+                  placeholder="(11) 99999-9999"
+                  required
+                />
+                <p class="field-error" id="leadWhatsappError" role="alert"></p>
+              </div>
+              <button type="submit" class="btn btn--primary">Ver meu diagnóstico agora</button>
+              <button type="button" class="btn btn--ghost" id="btnLeadBack">Voltar</button>
+              <p class="form-note">
+                Ao continuar, você concorda em receber o resultado e informações do Selo Zero Odor
+                Canino.
+              </p>
+            </form>
+          </div>
+        </section>
+
+        <!-- RESULT -->
+        <section class="screen" id="screen-result" aria-labelledby="resultHeading">
+          <div class="screen__body">
+            <div class="result-hero">
+              <img
+                src="assets/img/logo-web.png"
+                width="72"
+                height="72"
+                alt=""
+                style="margin: 0 auto 0.65rem; border-radius: 50%"
+              />
+              <p class="eyebrow">Diagnóstico personalizado</p>
+              <h2 class="question-title" id="resultHeading">
+                <span id="resultName">Tutor</span>, este é o seu raio-X
+              </h2>
+            </div>
+
+            <div class="result-card">
+              <div class="score-gauge" aria-live="polite">
+                <div class="score-ring" id="scoreRingWrap">
+                  <svg viewBox="0 0 100 100" aria-hidden="true">
+                    <circle class="score-ring__track" cx="50" cy="50" r="42"></circle>
+                    <circle
+                      class="score-ring__value"
+                      id="scoreRingValue"
+                      cx="50"
+                      cy="50"
+                      r="42"
+                    ></circle>
+                  </svg>
+                  <div class="score-ring__label">
+                    <div class="score-ring__number" id="scoreNumber">0</div>
+                    <div class="score-ring__unit">score</div>
+                  </div>
+                </div>
+                <p class="score-urgency" id="scoreCaption">
+                  <span class="score-urgency__dot" aria-hidden="true"></span>
+                  <span class="score-urgency__text">Score</span>
+                </p>
+              </div>
+              <p class="profile-name" id="profileName">Perfil</p>
+              <p class="profile-mirror" id="profileMirror"></p>
+            </div>
+
+            <ul class="result-points" id="profilePoints"></ul>
+
+            <figure class="photo-frame" style="aspect-ratio: 16/10; max-height: none">
+              <img
+                src="assets/img/raca-lhasa.jpg"
+                alt="Lhasa Apso, raça pequena de companhia"
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+            </figure>
+
+            <p class="lede">
+              O próximo passo não é mais um produto aleatório. É um plano de triagem + rotina de 14
+              dias para cães pequenos — com checklist para executar sem bagunça.
+            </p>
+          </div>
+          <div class="screen__footer">
+            <a class="btn btn--primary" id="ctaSales" href="vendas.html"
+              >Ver o plano que organiza o hálito</a
+            >
+            <p class="form-note">Acesso imediato · R$&nbsp;37 · garantia de 7 dias</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/quiz.js" defer></script>
+  </body>
+</html>
