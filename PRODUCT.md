@@ -81,7 +81,15 @@ Links de checkout e WhatsApp: editar `js/config.js` (`SZO.checkouts` e `SZO.what
 | Upsell | https://go.perfectpay.com.br/PPU38CQE7PF?upsell=true |
 | Downsell | https://go.perfectpay.com.br/PPU38CQE7PM?upsell=true |
 
-No PerfectPay: configurar URL de redirecionamento pós-compra da oferta principal para `/upsell.html` (ou URL completa hospedada).
+No PerfectPay (domínio `https://www.zeroodorcanino.lat`):
+
+| Após pagar | Redirect |
+|------------|----------|
+| Principal R$ 37 | `https://www.zeroodorcanino.lat/upsell` |
+| Upsell R$ 57 | `https://www.zeroodorcanino.lat/obrigado` |
+| Downsell R$ 19,90 | `https://www.zeroodorcanino.lat/obrigado` |
+
+URLs limpas (`/upsell`, `/downsell`…) via `vercel.json` → `cleanUrls: true`.
 
 ## Captura de leads (Google Planilhas)
 
