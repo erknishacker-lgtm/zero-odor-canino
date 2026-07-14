@@ -22,7 +22,8 @@ window.SZO.whatsapp = "";
  * Deixe "" até seguir docs/CAPTURA-LEADS-PLANILHA.md e colar a URL /exec.
  * Ex: "https://script.google.com/macros/s/XXXX/exec"
  */
-window.SZO.sheetWebhook = "";
+window.SZO.sheetWebhook =
+  "https://script.google.com/macros/s/AKfycbwlR5Z8RgKsL4ZW-9WxKBFfbCLu-DMjJFGnOH74vabAgfDbP1g100pRWbmeNU_0phIYuQ/exec";
 
 /**
  * Envia lead para a planilha Google (não bloqueia o quiz se falhar).
