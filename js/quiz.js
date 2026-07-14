@@ -476,7 +476,7 @@
       nome: first,
     });
     if (els.ctaSales) {
-      els.ctaSales.href = `/vendas.html?${params.toString()}`;
+      els.ctaSales.href = `vendas.html?${params.toString()}`;
     }
 
     showScreen("result");

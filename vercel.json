@@ -1,12 +1,4 @@
 {
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/upsell", "destination": "/oferta-30-dias.html" },
-    { "source": "/downsell", "destination": "/pacote-express.html" },
-    { "source": "/obrigado", "destination": "/acesso.html" },
-    { "source": "/vendas", "destination": "/vendas.html" },
-    { "source": "/oferta-30-dias", "destination": "/oferta-30-dias.html" },
-    { "source": "/pacote-express", "destination": "/pacote-express.html" },
-    { "source": "/acesso", "destination": "/acesso.html" }
-  ]
+  "cleanUrls": false
 }
