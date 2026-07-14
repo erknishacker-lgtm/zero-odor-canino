@@ -1257,6 +1257,20 @@ input {
   aspect-ratio: 4 / 3;
 }
 
+.media-block--product {
+  aspect-ratio: 4 / 5;
+  max-height: 28rem;
+  margin-inline: auto;
+  max-width: 22rem;
+  background: oklch(0.12 0.02 155);
+  border-color: oklch(0.78 0.12 85 / 0.35);
+}
+
+.media-block--product img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .bullet-list {
   list-style: none;
   margin: 0;

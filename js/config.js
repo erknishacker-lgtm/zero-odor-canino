@@ -8,9 +8,9 @@ window.SZO = window.SZO || {};
 window.SZO.checkouts = {
   /** Oferta principal (R$ 37) */
   main: "https://go.perfectpay.com.br/PPU38CQE7P8",
-  /** Upsell: Protocolo 30 Dias Zero Odor (R$ 57) */
+  /** Upsell: Plano Zero Odor Express (R$ 57) */
   upsell: "https://go.perfectpay.com.br/PPU38CQE7PF?upsell=true",
-  /** Downsell: Pacote Express de Execução (R$ 19,90) */
+  /** Downsell: R$ 19,90 */
   downsell: "https://go.perfectpay.com.br/PPU38CQE7PM?upsell=true",
 };
 
