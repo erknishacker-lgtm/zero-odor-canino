@@ -1,4 +1,10 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/upsell", "destination": "/upsell/index.html" },
+    { "source": "/downsell", "destination": "/downsell/index.html" },
+    { "source": "/obrigado", "destination": "/obrigado/index.html" },
+    { "source": "/vendas", "destination": "/vendas/index.html" }
+  ]
 }
