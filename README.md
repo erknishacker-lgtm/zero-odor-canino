@@ -14,7 +14,7 @@ Site estático. Cada pasta = rota no domínio.
 
 - Quiz: https://erknishacker-lgtm.github.io/zero-odor-canino/
 - Vendas: https://erknishacker-lgtm.github.io/zero-odor-canino/vendas/
-- Upsell: https://erknishacker-lgtm.github.io/zero-odor-canino/upsell/
+- Upsell (Plano Zero Odor Express): https://erknishacker-lgtm.github.io/zero-odor-canino/upsell/
 - Downsell: https://erknishacker-lgtm.github.io/zero-odor-canino/downsell/
 - Obrigado: https://erknishacker-lgtm.github.io/zero-odor-canino/obrigado/
 
