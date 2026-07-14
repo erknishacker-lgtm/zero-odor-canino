@@ -1,34 +1,38 @@
-# Selo Zero Odor Canino — links oficiais (funcionam)
+# Zero Odor Canino
 
-> **Não use** `www.zeroodorcanino.lat/upsell` enquanto a Vercel não republicar o código.
-> Esse domínio ainda entrega uma página antiga que fica em loop ("Redirecionando…").
+Site estático. Cada pasta = rota no domínio.
 
-## Use estes links (GitHub Pages)
+```
+/                 → quiz (index.html)
+/vendas/          → página de vendas
+/upsell/          → upsell
+/downsell/        → downsell
+/obrigado/        → obrigado
+```
 
-| Página | URL |
-|--------|-----|
-| Quiz | https://erknishacker-lgtm.github.io/zero-odor-canino/ |
-| Vendas | https://erknishacker-lgtm.github.io/zero-odor-canino/vendas.html |
-| Upsell | https://erknishacker-lgtm.github.io/zero-odor-canino/upsell.html |
-| Downsell | https://erknishacker-lgtm.github.io/zero-odor-canino/downsell.html |
-| Obrigado | https://erknishacker-lgtm.github.io/zero-odor-canino/acesso.html |
-| Obrigado (alt) | https://erknishacker-lgtm.github.io/zero-odor-canino/obrigado.html |
-| Upsell (alt) | https://erknishacker-lgtm.github.io/zero-odor-canino/oferta-30-dias.html |
-| Downsell (alt) | https://erknishacker-lgtm.github.io/zero-odor-canino/pacote-express.html |
+## Links que funcionam agora (GitHub Pages)
 
-## PerfectPay — redirects (cole exatamente)
+- Quiz: https://erknishacker-lgtm.github.io/zero-odor-canino/
+- Vendas: https://erknishacker-lgtm.github.io/zero-odor-canino/vendas/
+- Upsell: https://erknishacker-lgtm.github.io/zero-odor-canino/upsell/
+- Downsell: https://erknishacker-lgtm.github.io/zero-odor-canino/downsell/
+- Obrigado: https://erknishacker-lgtm.github.io/zero-odor-canino/obrigado/
 
-1. Produto principal (R$ 37) →  
-   `https://erknishacker-lgtm.github.io/zero-odor-canino/upsell.html`
+## PerfectPay (cole estes redirects)
 
-2. Upsell (R$ 57) →  
-   `https://erknishacker-lgtm.github.io/zero-odor-canino/obrigado.html`
+1. Compra principal → `https://erknishacker-lgtm.github.io/zero-odor-canino/upsell/`
+2. Upsell pago → `https://erknishacker-lgtm.github.io/zero-odor-canino/obrigado/`
+3. Downsell pago → `https://erknishacker-lgtm.github.io/zero-odor-canino/obrigado/`
 
-3. Downsell (R$ 19,90) →  
-   `https://erknishacker-lgtm.github.io/zero-odor-canino/obrigado.html`
+## Domínio www.zeroodorcanino.lat
 
-## Por que o .lat não funciona
+Só vai servir estas pastas se a **Vercel** estiver ligada a este repositório e fizer deploy da branch `main`.
+Hoje o domínio ainda tem deploy antigo. Até republicar:
 
-O DNS de `www.zeroodorcanino.lat` aponta para a **Vercel**, e a Vercel **não está publicando** este repositório (continua o HTML velho de redirect).
+**Settings → Git → conectar `erknishacker-lgtm/zero-odor-canino` → Redeploy sem cache.**
 
-Para consertar o domínio: na Vercel, conectar o repo `erknishacker-lgtm/zero-odor-canino` (branch `main`) e **Redeploy sem cache**.
+Depois disso:
+- https://www.zeroodorcanino.lat/upsell
+- https://www.zeroodorcanino.lat/downsell
+- https://www.zeroodorcanino.lat/obrigado
+- https://www.zeroodorcanino.lat/vendas
