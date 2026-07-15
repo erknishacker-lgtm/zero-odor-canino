@@ -1868,3 +1868,237 @@ input {
 .no-sticky {
   padding-bottom: 2rem;
 }
+
+/* ——— Prova científica + especialistas ——— */
+.science-carousel {
+  position: relative;
+  margin-top: 1.15rem;
+  border-radius: 14px;
+  border: 1px solid var(--border-dark);
+  background: linear-gradient(165deg, oklch(0.16 0.03 155), var(--surface));
+  overflow: hidden;
+}
+
+.science-carousel__track {
+  display: flex;
+  transition: transform 0.35s var(--ease);
+  will-change: transform;
+}
+
+.science-slide {
+  flex: 0 0 100%;
+  min-height: 15.5rem;
+  padding: 1.35rem 1.15rem 3.5rem;
+  box-sizing: border-box;
+}
+
+.science-slide__kicker {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.science-slide h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 5vw, 1.55rem);
+  line-height: 1.2;
+  margin: 0 0 0.65rem;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.science-slide p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  font-weight: 550;
+  line-height: 1.45;
+}
+
+.science-slide--hook h3 {
+  color: var(--gold-soft);
+  font-size: clamp(1.4rem, 5.5vw, 1.75rem);
+}
+
+.science-carousel__nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0 0.85rem;
+  pointer-events: none;
+}
+
+.science-carousel__nav > * {
+  pointer-events: auto;
+}
+
+.science-carousel__btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid oklch(0.78 0.12 85 / 0.45);
+  background: oklch(0.14 0.02 155 / 0.9);
+  color: var(--gold-soft);
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.science-carousel__btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.science-carousel__dots {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.science-carousel__dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: oklch(0.55 0.03 155);
+  cursor: pointer;
+}
+
+.science-carousel__dot.is-active {
+  background: var(--gold);
+  width: 1.1rem;
+  border-radius: 999px;
+}
+
+.science-refs {
+  margin: 0.85rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.section--light .science-refs {
+  color: var(--light-muted);
+}
+
+.expert-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin-top: 1.15rem;
+}
+
+.expert-card {
+  border-radius: 14px;
+  border: 1px solid var(--border-dark);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.expert-card__photo {
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: var(--bg-deep);
+}
+
+.expert-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.expert-card__body {
+  padding: 1.1rem 1rem 1.2rem;
+}
+
+.expert-card__role {
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.expert-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin: 0 0 0.55rem;
+  letter-spacing: -0.02em;
+}
+
+.expert-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 550;
+  line-height: 1.45;
+}
+
+.stat-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+}
+
+.stat-pill {
+  padding: 0.85rem 0.75rem;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border-dark);
+  text-align: center;
+}
+
+.stat-pill strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: var(--gold-soft);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.stat-pill span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  line-height: 1.3;
+}
+
+.section--light .stat-pill {
+  background: oklch(1 0 0);
+  border-color: var(--border-light);
+}
+
+.section--light .stat-pill span {
+  color: var(--light-muted);
+}
+
+@media (min-width: 720px) {
+  .expert-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.15rem;
+  }
+
+  .science-slide {
+    min-height: 14rem;
+    padding: 1.6rem 1.5rem 3.6rem;
+  }
+}
